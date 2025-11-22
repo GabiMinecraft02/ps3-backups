@@ -1,0 +1,35 @@
+[
+    {
+        "category": "Backups PS3",
+        "backups": [
+            {
+                "title": "Wanters Backup",
+                "version": "V1",
+                "pkg": "#",
+                "archive": "#",
+                "showcase": "#"
+            },
+            {
+                "title": "Las Backup",
+                "version": "V1",
+                "pkg": "#",
+                "archive": "#",
+                "showcase": "#"
+            },
+            {
+                "title": "Baka Backups",
+                "version": "V1",
+                "pkg": "#",
+                "archive": "#",
+                "showcase": "#"
+            },
+            {
+                "title": "Baka Backups",
+                "version": "V2",
+                "pkg": "#",
+                "archive": "#",
+                "showcase": "#"
+            }
+        ]
+    }
+]

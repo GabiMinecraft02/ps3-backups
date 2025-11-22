@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    text-shadow: 0 0 4px black;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.cat {
+    margin: 15px 0;
+    padding: 12px;
+    background: rgba(0,0,0,0.6);
+    border-radius: 12px;
+}
+
+.backup {
+    margin: 10px 0;
+    padding: 10px;
+    background: rgba(0,0,0,0.75);
+    border-radius: 10px;
+}
+
+.backup h3, .backup h4, .cat strong {
+    color: white;
+    margin: 5px 0;
+}
+
+button {
+    margin: 5px 5px 5px 0;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #2e7d32;
+    color: white;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #1b5e20;
+}
+
+.soon {
+    opacity: 0.6;
+    color: white;
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0.9em;
+    color: white;
+}

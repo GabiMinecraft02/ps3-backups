@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>GabiMinecraft02 - Backups PS3</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body style="background-image: url('{{ url_for('static', filename='background/image.jpg') }}');">
+
+<h1>Backups Minecraft PS3</h1>
+<p>Bienvenue sur mon site officiel !</p>
+
+<h2>Backups</h2>
+
+<ul>
+    {% for cat in categories %}
+    <li>
+        {% if cat.status == "ok" %}
+        <div class="cat">
+            <strong>{{ cat.name }}</strong><br>
+
+            <!-- Wanters backup -->
+            <div class="backup">
+                <h3>Wanters Backup</h3>
+                <h4>Wanters V1</h4>
+                <button>Download PKG</button>
+                <button>Download Archive</button>
+                <button>Showcase</button>
+            </div>
+
+            <!-- Las backup -->
+            <div class="backup">
+                <h3>Las Backup</h3>
+                <h4>Las V1</h4>
+                <button>Download PKG</button>
+                <button>Download Archive</button>
+                <button>Showcase</button>
+            </div>
+
+            <!-- Baka backups -->
+            <div class="backup">
+                <h3>Baka Backups</h3>
+                <h4>Baka V1</h4>
+                <button>Download PKG</button>
+                <button>Download Archive</button>
+                <button>Showcase</button>
+
+                <h4>Baka V2</h4>
+                <button>Download PKG</button>
+                <button>Download Archive</button>
+                <button>Showcase</button>
+            </div>
+        </div>
+
+        {% else %}
+        <div class="cat soon">
+            <strong>{{ cat.name }}</strong>
+            <span>(Coming Soon)</span>
+        </div>
+        {% endif %}
+    </li>
+    {% endfor %}
+</ul>
+
+<footer>
+    <p>© 2025 GabiMinecraft02</p>
+</footer>
+
+</body>
+</html>

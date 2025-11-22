@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title if title else "GabiMinecraft02 - Backups PS3" }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body style="background-image: url('{{ url_for('static', filename='background/image.jpg') }}');">
+
+<header>
+    <h1>GabiMinecraft02</h1>
+    <p>Backups Minecraft PS3</p>
+</header>
+
+<nav>
+    <ul class="socials">
+        <li><a href="#">TikTok</a></li>
+        <li><a href="#">YouTube</a></li>
+        <li><a href="#">Snapchat</a></li>
+        <li><a href="#">Discord</a></li>
+    </ul>
+</nav>
+
+<main>
+    {% block content %}{% endblock %}
+</main>
+
+<footer>
+    <p>© 2025 GabiMinecraft02</p>
+</footer>
+
+</body>
+</html>
