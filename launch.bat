@@ -7,9 +7,6 @@ if exist venv (
     call venv\Scripts\activate
 )
 
-echo Installation des dependances...
-pip install -r requirements.txt
-
 echo Demarrage de l'application...
 set PORT=5000
 python app.py
