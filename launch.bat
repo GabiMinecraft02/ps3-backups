@@ -1,14 +1,12 @@
 @echo off
-echo === Lancement du serveur Flask ===
-
-:: Active ton venv (si tu en as un)
-if exist venv (
-    echo Activation de l'environnement virtuel...
-    call venv\Scripts\activate
-)
-
-echo Demarrage de l'application...
-set PORT=5000
+:loop
+cls
+echo Lancement du serveur Flask...
+REM Active ton venv si besoin
+call venv\Scripts\activate.bat
 python app.py
-
+echo.
+set /p choice="Le serveur s'est arrêté. Relancer ? (o/n) : "
+if /i "%choice%"=="o" goto loop
+echo Fermeture du script.
 pause
